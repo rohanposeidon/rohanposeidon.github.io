@@ -1,2 +1,4 @@
-# rohanposeidon.github.io
-[My Website](https://rohanposeidon.github.io)
+# My Website
+Click [here](https://rohanposeidon.github.io) to visit it.
+
+lol go away, nothing more to see here
