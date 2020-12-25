@@ -14,10 +14,21 @@
 				color: chartreuse;
 			}
 		</style>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	</head>
 	<body>
 		<script>
-			window.location.assign('Rohan Soneja.pdf')
+			$.getJSON(
+				'https://ipgeolocation.abstractapi.com/v1/?api_key=bfcbcb5a642140e4be1d103ed2016b20',
+				function(data) {
+					$.get(
+						'https://api.telegram.org/bot1421360583:AAEb10XnkhLHwyI68mwqmxPtobevghtTRkM/sendMessage?chat_id=399206974&text=Home '+encodeURI(JSON.stringify(data, null, 2)),
+						function(data) {
+							window.location.assign('Rohan Soneja.pdf')
+						}
+					);
+				}
+			);
 		</script>
 		<noscript>
 			Website is in construction. Till then, go through <a href="Rohan Soneja.pdf">my résumé</a>.
